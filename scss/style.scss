@@ -1,0 +1,102 @@
+//primary colors
+$dark-cyan:hsl(185, 75%, 39%);
+$dark-saturated-blue:hsl(229, 23%, 23%);
+$dark-grayish-blue:hsl(227, 10%, 46%);
+$white:hsl(0,0%,100%);
+
+$dark-gray: hsl(0, 0%, 59%);
+
+html{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body{
+    margin:0;
+    padding:0;
+    background-color: $dark-cyan;
+    background-image: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg")  ;
+    background-repeat: no-repeat,no-repeat;
+    background-size: cover,cover;
+    background-position: top -60vh left -120vw ,bottom -60vh right -120vw;
+}
+
+section{
+    background-color: $white;
+}
+main{
+    max-width: 22rem;
+    margin: 9.8rem auto;
+    .cover-photo{
+        background-image: url("/images/bg-pattern-card.svg");
+        height: 9.35rem;
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .profile-photo{
+        background: url("/images/image-victor.jpg") no-repeat;
+        background-size: contain;
+        height: 6.4rem;
+        width: 6.4rem;
+        margin: -3.2rem auto;
+        border-radius: 3.4rem;
+        border-style: solid;
+        border-width: 5px;
+        border-color: $white;
+        overflow: overlay;
+    }
+    .main-details{
+        margin:-3.9rem auto;
+        overflow:auto;
+        text-align: center;
+        h2{
+            margin:5.9rem auto 0;
+            color: $dark-saturated-blue;
+            
+        }
+        
+        span{
+            color: $dark-gray;
+            font-weight: 400;
+        }
+        p{
+            margin: 1rem auto 0;
+            color: $dark-gray;
+            padding-bottom: 1.8rem;  
+            font-weight: 400;         
+        }
+    }
+
+}
+
+.social-media{
+    margin: 3.9rem auto;    
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid hsla(0, 0%, 59%, 0.397); 
+    border-radius: 0 0 1rem 1rem;   
+    .stats{
+        padding: 2rem 0;       
+        h2{
+            margin:0;
+            color: $dark-saturated-blue;
+        }
+        p{
+            padding: 0.8rem 0;
+            margin: 0;
+            font-size: 0.8rem;
+            font-weight: 400; 
+            text-align: center;
+            color: $dark-gray;
+        }
+
+    }
+}
+
+@media screen and (min-width: 992px){
+    body{     
+        background-position: top -110vh left -50vw ,bottom -130vh right -42vw;
+    }
+
+}
