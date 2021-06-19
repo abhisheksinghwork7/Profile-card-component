@@ -10,8 +10,10 @@ body {
   background-color: #19a2ae;
   background-image: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg");
   background-repeat: no-repeat,no-repeat;
-  background-size: cover,cover;
-  background-position: top -60vh left -120vw ,bottom -60vh right -120vw;
+  background-size: inherit, inherit;
+  background-position: top -700px left -550px , bottom -550px right -700px;
+  background-attachment: fixed,fixed;
+  z-index: -1;
 }
 
 section {
@@ -41,12 +43,14 @@ main .profile-photo {
   border-width: 5px;
   border-color: white;
   overflow: overlay;
+  z-index: 2;
 }
 
 main .main-details {
   margin: -3.9rem auto;
   overflow: auto;
   text-align: center;
+  z-index: 1;
 }
 
 main .main-details h2 {
@@ -98,7 +102,7 @@ main .main-details p {
 
 @media screen and (min-width: 992px) {
   body {
-    background-position: top -110vh left -50vw ,bottom -130vh right -42vw;
+    background-position: top -489px left  -300px, bottom -489px right -300px;
   }
 }
 /*# sourceMappingURL=style.css.map */
