@@ -48,7 +48,7 @@ main .profile-photo {
 
 main .main-details {
   margin: -3.9rem auto;
-  overflow: auto;
+  overflow: hidden;
   text-align: center;
   z-index: 1;
 }
